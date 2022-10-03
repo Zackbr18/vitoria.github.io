@@ -25,7 +25,6 @@ p{
     font-family: Roboto, sans-serif;
     text-align: justify;
     border: 2px none;
-    backdrop-filter: blur(200px);
 }
 
 img{
