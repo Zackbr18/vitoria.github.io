@@ -2,7 +2,6 @@ body{
     background-image: url(https://img.freepik.com/vetores-gratis/papel-de-parede-de-fundo-de-flores-vetor-fofo_53876-136877.jpg?w=740&t=st=1664755926~exp=1664756526~hmac=1087f658067cca48fdae144cf250f9271d732fef4778c9a291f50dd6211d7ea0);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(100px);
 }
 
 h1{
@@ -25,6 +24,8 @@ p{
     color: black;
     font-family: Roboto, sans-serif;
     text-align: justify;
+    border: 2px none;
+    backdrop-filter: blur(200px);
 }
 
 img{
