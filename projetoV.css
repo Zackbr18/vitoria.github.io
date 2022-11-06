@@ -25,6 +25,7 @@ p{
     font-family: Roboto, sans-serif;
     text-align: justify;
     border: 2px none;
+    margin-top: 10px;
 }
 
 img{
@@ -34,15 +35,15 @@ img{
     margin-right: 4px;
     transform: rotate(-2deg);
     border-radius: 10px;
-    image-rendering: optimizeQuality;
+    margin-top: 10px;
 }
 
 #p1{
     border: 1px solid #17407d;
     background-color: #17407d;
     border-radius: 10px;
-    width: 170px;
-    margin-left: 20%;
+    width: 175px;
+    margin-left: 35%;
     color: white;
     font-family: Roboto, sans-serif;
     text-align: center;
