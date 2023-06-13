@@ -1,0 +1,358 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+*::-webkit-scrollbar{
+    background-color: #D39B9B;
+    border-radius: 15px;
+    width: 7px;
+    transition: 0.2s;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #3F3939;
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+*::-webkit-scrollbar:horizontal{
+    height: 7px;
+}
+
+*::-webkit-scrollbar-button{
+    display: none;
+}
+
+*::-webkit-scrollbar-corner{
+    display: none;
+}
+
+.Greetings::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+body{
+    background-color: #D39B9B;
+    margin: 0;
+}
+
+h3{
+    font-weight: 500;
+    color: #3F3939;
+    line-height: 16px;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 20px;
+    color: #3F3939;
+    margin-top: 30vh;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+main{
+    margin: 10px;
+    height: max-content;
+    width: 96.5vw;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: #D9D9D9;
+    transition: 0.3s;
+
+}
+
+.newMain{
+    height: max-content;
+}
+
+article{
+    
+    background-color: #FFB1B1;
+    border-radius: 15px;
+    padding: 5px;
+    line-height: 15px;
+    text-align: top;
+    width: 95vw;
+    word-wrap: break-word;
+    transition: 0.3s;
+}
+
+p{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 500;
+    color: #3F3939;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.backText{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+button{
+    margin-top: 5vh;
+    margin-left: 91vw;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 30px;
+    font-size: 19px;
+    background-color: #E53737;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover{
+    transform: scale(1.2);
+    border: 1px solid blue;
+    transition: 0.3s;
+}
+
+.BackPage{
+    margin-left: 0px;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+.imgsContainers{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.numberOnePhoto{
+    margin-top: 3vh;
+}
+
+.numberTwoPhoto{
+    margin-top: 2vh;
+}
+
+.Greetings{
+    display: flex;
+    padding: 15px;
+    width: 93vw;
+    background-color: #D68A8A;
+}
+
+.Greetings:nth-of-type(2), .Greetings:nth-of-type(3), .Greetings:nth-of-type(4){
+    margin-top: 20px;
+}
+
+
+/*TRABALHANDO COM O FRONT PAGE*/
+.front{
+    margin: 0;
+    margin-top: -17px;
+    z-index: 1;
+    background-color: #D68A8A;
+    height: 100%;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.containerFront{
+    background-color: #3F3939;
+    width: 400px;
+    border-radius: 15px;
+    transition: 0.2s;
+    position: absolute;
+    margin-left: 37vw;
+    margin-top: 25vh;
+    
+}
+
+.textFront{
+    color: white;
+    text-align: center;
+}
+
+.frontImage{
+    width: 130px;
+    height: 130px;
+    margin-left: 130px;
+}
+
+.back{
+    display: none;
+}
+
+.backType2{
+    display: initial;
+}
+
+#InitButton{
+    margin-left: 92px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: max-content;
+}
+
+#InitButton:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*Resolver o problema de width do texto e de algum article/greeting*/
+
+@media (max-width: 1200px) {
+    article{
+        width: 94vw;
+    }
+
+    .Greetings{
+        width: 91vw;
+    }
+
+    main{
+        height: max-content;
+    }
+
+    button{
+        margin-left: 89vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .containerFront{
+        margin-left: 32vw;
+    }
+}
+
+@media (max-width: 900px) {
+    article{
+        width: 92vw;
+    }
+
+    .Greetings{
+        width: 88vw;
+    }
+
+    main{
+        height: max-content;
+    }
+
+    button{
+        margin-left: 80vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .WordBreak{
+        width: 60vw;
+    }
+
+    .containerFront{
+        margin-left: 25vw;
+    }
+}
+
+@media (max-width: 700px) {
+    article{
+        width: 83vw;
+    }
+
+    .Greetings{
+        width: 81vw;
+    }
+
+    main{
+        height: max-content;
+    }
+
+    button{
+        margin-left: 78vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .WordBreak{
+        width: 50vw;
+    }
+
+    .containerFront{
+        margin-left: 20vw;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 600px) {
+    article{
+        width: 87vw;
+    }
+
+    main{
+        height: max-content;
+    }
+
+    .Greetings{
+        width: 79vw;
+    }
+
+    button{
+        margin-left: 70vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .WordBreak{
+        width: 35vw;
+    }
+    .containerFront{
+        margin-left: 15vw;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 500px) {
+    article{
+        width: 85vw;
+    }
+
+    main{
+        height: max-content;
+    }
+
+    
+    .Greetings{
+        width: 79vw;
+        height: 40vh;
+        overflow: scroll;
+    }
+
+    button{
+        margin-left: 70vw;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .WordBreak{
+        width: 36vw;
+    }
+
+    .containerFront{
+        margin-left: 10vw;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 400px){
+    .containerFront{
+        margin-left: 0px;
+        transform: scale(0.7);
+    }
+}
